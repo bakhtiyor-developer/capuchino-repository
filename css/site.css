@@ -1,0 +1,441 @@
+:root {
+    --fraunces: 'Fraunces', serif;
+    --barlow: 'Barlow', sans-serif;
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA;
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+    --def-btn: #0E8784;
+    --hov-btn: #66D2CF;
+    --dis-btn: #E2DEDB;
+    --def-option: #F4F1EB;
+    --hov-option: #FDD6BA;
+    --act-option: #0E8784;
+}
+
+.our-header {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    padding-left: 85px;
+    background-repeat: no-repeat;
+    background-image: -webkit-image-set(url('../img/capuchino.jpg') 1x, url('../img/capuchino@2x.jpg') 2x );
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.webp-capuchino .our-header {
+    background-image: -webkit-image-set(url('../img/capuchino.webp') 1x, url('../img/capuchino@2x.webp') 2x );
+}
+
+.avif-capuchino .our-header {
+    background-image: -webkit-image-set(url('../img/capuchino.avif') 1x, url('../img/capuchino@2x.avif') 2x );
+}
+
+.our__title {
+    font-size: 40px;    
+    color: var(--light-cream);
+    font-family: var(--fraunces);
+    padding-bottom: 24px;
+}
+
+.our__defination {
+    max-width: 445px;
+    line-height: 26px;
+    color: var(--light-cream);
+    font-family: var(--barlow);
+}
+
+.com-box {
+    padding-bottom: 122px;
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.com-img-box {
+    width: 445px;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.com__img {
+    object-fit: cover;
+}
+
+.com-con__title {
+    color: var(--dark-grey-blue);
+    font-size: 40px;
+    font-family: var(--fraunces);
+    margin-bottom: 32px;
+}
+
+.com-con__defination {
+    max-width: 540px;
+    line-height: 26px;
+    font-family: var(--barlow);
+    color: var(--dark-grey-blue);
+}
+
+.qual-section {
+    margin-bottom: 84px;
+}
+
+.qual-box {
+    position: relative;
+    z-index: 1;
+    margin-top: 122px;
+    width: 100%;
+    height: 474px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    padding-left: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.qual__img {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    right: 100px;
+    width: 445px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.qual__img--el {
+    width: 100%;
+    height: 100%;
+}
+
+.qual__caption {
+    color: var(--light-cream);
+    font-family: var(--fraunces);
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.qual__paragraph {
+    max-width: 540px;
+    color: var(--light-cream);
+    line-height: 26px;
+    font-family: var(--barlow);
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.adr-box {
+    width: 1110px;
+    margin: 0 auto; 
+    margin-bottom: 168px;
+}
+
+.adr-heading {
+    color: var(--grey);
+    font-size: 24px;
+    font-family: var(--fraunces);
+    margin-bottom: 70px;
+}
+
+.adr__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.adr__item {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    padding-top: 94px;
+}
+
+.adr__item::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 51px;
+    height: 49px;
+    background-image: url('../img/us-map.svg');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.adr__item:nth-child(2):before {
+    background-image: url('../img/uz-map.svg');
+}
+
+.adr__item:last-child:before {
+    background-image: url('../img/rus-map.svg');
+}
+
+.adr__info__list--caption {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.info__list--adrs {
+    line-height: 26px;
+    text-decoration: none;
+    font-family: var(--barlow);
+    color: black;
+}
+
+.info__list--adrs:hover {
+    font-weight: bold;
+    color: rgb(100, 4, 255);
+}
+
+@media only screen and (max-width: 688px) {
+    .our-header {
+        height: 400px;
+        padding-left: 58px;
+        background-position: -20px 0;
+        background-image: -webkit-image-set(url('../img/capuchino-2.jpg') 1x, url('../img/capuchino-2@2x.jpg') 2x);
+    }
+
+    .webp-capuchino-2 .our-header {
+        background-image: -webkit-image-set(url('../img/capuchino-2.webp') 1x, url('../img/capuchino-2@2x.webp') 2x );
+    }
+    
+    .avif-capuchino-2 .our-header {
+        background-image: -webkit-image-set(url('../img/capuchino-2.avif') 1x, url('../img/capuchino-2@2x.avif') 2x );
+    }
+    
+    .our__title {
+        font-size: 32px;
+    }
+    
+    .our__defination {
+        font-size: 15px;
+    }
+
+
+    .com-box {
+        width: 100%;
+    }
+    
+    .com-img-box {
+        width: 281px;
+        height: 470px;
+    }
+    
+    .com-con__title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .com-con__defination {
+        max-width: 300px;
+        line-height: 25px;
+    }
+
+
+    /* QUAL DESIGN */
+    .qual-box {
+        /* margin-top: 122px; */
+        padding-top: 224px;
+        height: 488px;
+        padding-left: 0px;
+    }
+    
+    .qual__img {
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 320px;
+    }
+    
+    .qual__caption {
+        text-align: center;
+        font-size: 32px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    
+    .qual__paragraph {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .adr-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 629px) {
+    .our-header {
+        background-position: -100px 0;
+    }
+
+    .com-box {
+        flex-direction: column;
+    }
+
+    .com-img-box {
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 48px;
+        width: 100%;
+        height: 520px;
+    }
+
+    .com__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .com-con__title {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    
+    .com-con__defination {
+        text-align: center;
+        max-width: 90%;
+        line-height: 25px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .our-header {
+        padding-left: 0px;
+        background-position: center;
+        background-image: -webkit-image-set(url('../img/capuchino-3.jpg') 1x, url('../img/capuchino-3@2x.jpg') 2x);
+    }
+
+    .webp-capuchino-3 .our-header {
+        background-image: -webkit-image-set(url('../img/capuchino-3.webp') 1x, url('../img/capuchino-3@2x.webp') 2x );
+    }
+    
+    .avif-capuchino-3 .our-header {
+        background-image: -webkit-image-set(url('../img/capuchino-3.avif') 1x, url('../img/capuchino-3@2x.avif') 2x );
+    }
+
+    .our__title {
+        text-align: center;
+    }
+
+    .our__defination {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .com-img-box {
+        width: 377px;
+        height: 400px;
+    }
+
+    .qual-box {
+        padding-top: 155px;
+        height: 520px;
+    }
+    
+    .qual__img {
+        position: absolute;
+        z-index: 1;
+        top: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        border-radius: 20px;
+    }
+    
+    .qual__caption {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    
+    .qual__paragraph {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .adr-heading {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .adr__list {
+        flex-direction: column;
+    }
+    
+    .adr__item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .adr__item:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    
+    .adr__item::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .adr__info__list--caption {
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .info__list--adrs {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 436px) {
+    .qual-box {
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .com-img-box {
+        width: 100%;
+        height: 400px;
+    }
+
+    .our__title {
+        font-size: 32px;
+    }
+
+    .our__defination {
+        width: 100%;
+    }
+
+    .qual-box {
+        margin-top: 10px;
+        padding-top: 40px;
+        height: 509px;
+    }
+    
+    .qual__img {
+        border-radius: 10px;
+        top: -70px;
+        width: 80%;
+        height: 156px;
+    }
+}
