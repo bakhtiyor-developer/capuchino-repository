@@ -638,6 +638,12 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+    .hero {
+        background-image: url('../img/hero-3.jpg');
+        padding-right: 5px;
+        padding-left: 5px; 
+    }
+
     .nav__dropdown--active {
         display: flex;
     }
@@ -827,13 +833,6 @@ body {
     .container {
         padding-right: 8px;
         padding-left: 8px;
-    }
-    
-    .hero {
-        background-image: url('../img/hero-3.jpg');
-        padding-right: 5px;
-        padding-left: 5px;
-        
     }
     
     .hero__title {
